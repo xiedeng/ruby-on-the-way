@@ -2,21 +2,31 @@ class MathUtil
 
   # 计算两个数的合
   def add(a, b)
-    # TODO
+    return a + b
   end
 
   # 返回数组中最大的数
   def max(array)
-    # TODO
+    array.sort
+    return array[-1]
   end
 
   # 返回数据中的所有数的合
   def sum(array)
-    # TODO
+    result = 0
+    array.each do |i|
+        result += i
+    end
+    return result
+    
   end
 
   # 将数据每个元素成2返回
   def double(array)
-    # TODO
+      result = Array.new
+      array.each do |i|
+          result.push(i*2)
+      end
+      return result
   end
 end
